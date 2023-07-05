@@ -1,9 +1,12 @@
-
 import './App.css'
+import {Routes,Route} from "react-router-dom";
+import IndexPage from './pages/IndexPage';
 
 function App() {
   return (
-    <div className="bg-red-500">TEST</div>
+      <Routes>
+        <Route path="/" element={<IndexPage/>}/>
+      </Routes>
   )
 }
 
