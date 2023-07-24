@@ -6,6 +6,6 @@ pipelines:
         clone:
           enabled: false
         script:
-          - git clone --bare git@bitbucket.org:RepoOrg/koko_booking.git
+          - git clone --bare git@bitbucket.org:bitbucket/koko_booking.git
           - cd koko_booking.git
-          - git push --mirror git@github.com:RepoOrg/Koko_Booking.git
+          - git push --mirror git@github.com:github/Koko_Booking.git
