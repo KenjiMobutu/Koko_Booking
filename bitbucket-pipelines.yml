@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: Sync GitHub Mirror
+        image: alpine/git:latest
+        clone:
+          enabled: false
+        script:
+          - git clone --bare git@bitbucket.org:kenjimobutu/koko_booking.git
+          - cd koko_booking.git
+          - git push --mirror git@github.com:KenjiMobutu/Koko_Booking.git
